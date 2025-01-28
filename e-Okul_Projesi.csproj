@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3B57C9B1-4EBC-48F1-BE6A-D95694D65907}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>e_Okul_Projesi</RootNamespace>
+    <AssemblyName>e-Okul_Projesi</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmDersIslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDersIslemleri.Designer.cs">
+      <DependentUpon>FrmDersIslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDersProgramı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDersProgramı.Designer.cs">
+      <DependentUpon>FrmDersProgramı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDevamsızlık.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDevamsızlık.Designer.cs">
+      <DependentUpon>FrmDevamsızlık.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGirisler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGirisler.Designer.cs">
+      <DependentUpon>FrmGirisler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMudurDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMudurDetay.Designer.cs">
+      <DependentUpon>FrmMudurDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMudurGirisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMudurGirisi.Designer.cs">
+      <DependentUpon>FrmMudurGirisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOgrenciGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOgrenciGiris.Designer.cs">
+      <DependentUpon>FrmOgrenciGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOgrenciIslemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOgrenciIslemleri.Designer.cs">
+      <DependentUpon>FrmOgrenciIslemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOgretmenlerSayfası.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOgretmenlerSayfası.Designer.cs">
+      <DependentUpon>FrmOgretmenlerSayfası.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmÖgrenciDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmÖgrenciDetay.Designer.cs">
+      <DependentUpon>FrmÖgrenciDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmÖgretmenDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmÖgretmenDetay.Designer.cs">
+      <DependentUpon>FrmÖgretmenDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmÖgretmenGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmÖgretmenGiris.Designer.cs">
+      <DependentUpon>FrmÖgretmenGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmÖğrenciler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmÖğrenciler.Designer.cs">
+      <DependentUpon>FrmÖğrenciler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kurs_islemleri_Paneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kurs_islemleri_Paneli.Designer.cs">
+      <DependentUpon>Kurs_islemleri_Paneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MudurSifre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MudurSifre.Designer.cs">
+      <DependentUpon>MudurSifre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MudurSifreYenile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MudurSifreYenile.Designer.cs">
+      <DependentUpon>MudurSifreYenile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MüdürGirisBekleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MüdürGirisBekleme.Designer.cs">
+      <DependentUpon>MüdürGirisBekleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NotişlemleriPaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NotişlemleriPaneli.Designer.cs">
+      <DependentUpon>NotişlemleriPaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciBekleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrenciBekleme.Designer.cs">
+      <DependentUpon>OgrenciBekleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgretmenGirisBekleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgretmenGirisBekleme.Designer.cs">
+      <DependentUpon>OgretmenGirisBekleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrtSifremiUnuttum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrtSifremiUnuttum.Designer.cs">
+      <DependentUpon>OgrtSifremiUnuttum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlBaglanti.cs" />
+    <Compile Include="Sınıf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sınıf.Designer.cs">
+      <DependentUpon>Sınıf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yenileme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yenileme.Designer.cs">
+      <DependentUpon>Yenileme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_e_OkulDataSet.cs">
+      <DependentUpon>_e_OkulDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_e_OkulDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_e_OkulDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmDersIslemleri.resx">
+      <DependentUpon>FrmDersIslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDersProgramı.resx">
+      <DependentUpon>FrmDersProgramı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDevamsızlık.resx">
+      <DependentUpon>FrmDevamsızlık.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGirisler.resx">
+      <DependentUpon>FrmGirisler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMudurDetay.resx">
+      <DependentUpon>FrmMudurDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMudurGirisi.resx">
+      <DependentUpon>FrmMudurGirisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOgrenciGiris.resx">
+      <DependentUpon>FrmOgrenciGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOgrenciIslemleri.resx">
+      <DependentUpon>FrmOgrenciIslemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOgretmenlerSayfası.resx">
+      <DependentUpon>FrmOgretmenlerSayfası.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmÖgrenciDetay.resx">
+      <DependentUpon>FrmÖgrenciDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmÖgretmenDetay.resx">
+      <DependentUpon>FrmÖgretmenDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmÖgretmenGiris.resx">
+      <DependentUpon>FrmÖgretmenGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmÖğrenciler.resx">
+      <DependentUpon>FrmÖğrenciler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kurs_islemleri_Paneli.resx">
+      <DependentUpon>Kurs_islemleri_Paneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MudurSifre.resx">
+      <DependentUpon>MudurSifre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MudurSifreYenile.resx">
+      <DependentUpon>MudurSifreYenile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MüdürGirisBekleme.resx">
+      <DependentUpon>MüdürGirisBekleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotişlemleriPaneli.resx">
+      <DependentUpon>NotişlemleriPaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrenciBekleme.resx">
+      <DependentUpon>OgrenciBekleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgretmenGirisBekleme.resx">
+      <DependentUpon>OgretmenGirisBekleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrtSifremiUnuttum.resx">
+      <DependentUpon>OgrtSifremiUnuttum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Sınıf.resx">
+      <DependentUpon>Sınıf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yenileme.resx">
+      <DependentUpon>Yenileme.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="_e_OkulDataSet.xsc">
+      <DependentUpon>_e_OkulDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_e_OkulDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_e_OkulDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_e_OkulDataSet.xss">
+      <DependentUpon>_e_OkulDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ögrenci_ikon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\turkiye-cumhuriyeti-milli-egitim-bakanligi-logo-clipart-original.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hidden.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GeriSiyah.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KapatmaLeave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExitButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimizeEnter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MinimizeLeave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mudurEnter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MudurLeave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\turkiye-cumhuriyeti-milli-egitim-bakanligi-logo-clipart-original.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
